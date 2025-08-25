@@ -10,9 +10,339 @@
 
     <!-- Styles -->
     <link rel="stylesheet" href="/styles/reset.css" />
-    <link rel="stylesheet" href="/styles/variables.css" />
+    <!-- <link rel="stylesheet" href="/styles/variables.css" /> -->
     <link rel="stylesheet" href="/styles/base.css" />
-    <link rel="stylesheet" href="/styles/responsive.css" />
+    <!-- <link rel="stylesheet" href="/styles/responsive.css" /> -->
   </head>
-  <body></body>
+  <body>
+    <header>
+      <!-- Navigation Bar -->
+      <nav class="flex-between">
+        <a href="#" class="nav-logo flex-center">
+          <img src="/images/logo/logo.png" alt="logo website" />
+          <span>Robert Warren</span>
+        </a>
+        <div class="nav-links flex-center">
+          <ul>
+            <li class="nav-links--active"><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Gallery</a></li>
+            <li><a href="#">Pricing Plan</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+          <div class="nav-button flex-center">
+            <img src="images/icon/PhoneCall.svg" alt="icon phone" />
+            <a href="tel:+12025550120">+1-202-555-0120</a>
+          </div>
+        </div>
+      </nav>
+      <!-- Header content -->
+      <div class="header-content flex-center">
+        <h1>Hello, I’m Robert. I’m expert in to capture all the feelings.</h1>
+        <div class="header-content__items">
+          <p>
+            Nullam et ex lectus. Integer felis sapien, tempor maximus est in, commodo aliquam libero. Curabitur quam
+            risus, consecur nec commodo nec, bibendum sed sapien.
+          </p>
+          <div class="header__button">
+            <div class="header-button__button01 flex-center">
+              <a href="#"> View Gallery </a>
+              <a href="#" class="flex-center">
+                <img src="/images/icon/ArrowRight.svg" alt="icon mũi tên" />
+              </a>
+            </div>
+            <div class="header-button__button02 flex-center">
+              <a href="#" class="flex-center"> <img src="/images/icon/ChatCenteredDots.svg" alt="icon chat" /> </a>
+              <a href="#"> Get In Touch </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Header Photo -->
+      <div class="header-photo">
+        <img src="/images/content/header-img1.png" alt="Header Photo" />
+        <img src="/images/content/header-img2.png" alt="Header Photo" />
+        <img src="/images/content/header-img3.png" alt="Header Photo" />
+        <img src="/images/content/header-img4.png" alt="Header Photo" />
+        <img src="/images/content/header-img5.png" alt="Header Photo" />
+        <img src="/images/content/header-img6.png" alt="Header Photo" />
+      </div>
+
+      <!-- Darkmode Icon -->
+      <div class="darkmode flex-center">
+        <img src="/images/icon/Sun.svg" alt="icon darkmode" />
+      </div>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+      <!-- About Section -->
+      <section class="about-section">
+        <figure>
+          <img src="/images/content/about-img.png" alt="about image" />
+          <figcaption>
+            <div class="about-info__items">
+              <h3>26+</h3>
+              <p>Years of experience</p>
+            </div>
+            <hr />
+            <div class="about-info__items">
+              <h3>98.5%</h3>
+              <p>Client Satisfaction</p>
+            </div>
+            <hr />
+            <div class="about-info__items">
+              <h3>2149+</h3>
+              <p>Beautiful Photo</p>
+            </div>
+            <hr />
+            <div class="about-info__items">
+              <h3>17+</h3>
+              <p>Awards</p>
+            </div>
+          </figcaption>
+        </figure>
+
+        <div class="about-content">
+          <div class="about-tag">
+            <span>📸Photographer</span>
+            <span>📖Writer</span>
+            <span>✈️Traveler</span>
+          </div>
+          <h2>My name is Robert Warren. I’m a professional photographer for almost 26+ years.</h2>
+          <p>
+            Nullam ligula nulla, mollis sed leo sit amet, gravida faucibus ligula. Aliquam bibendum, sapien vel placerat
+            euismod, sem eros congue neque, eget dapibus felis ligula ac nibh. In eget erat purus. Maecenas porta metus
+            nec porttitor gravida. Fusce quis faucibus nisi, sit amet dictum ipsum. Nunc eu lorem at libero congue
+            dictum nam et nunc tincidunt, mollis sapien.
+          </p>
+          <div class="about-act">
+            <div class="about-button flex-center">
+              <a href="#" class="flex-center"> <img src="/images/icon/ChatCenteredDots.svg" alt="icon chat" /> </a>
+              <a href="#"> Get In Touch </a>
+            </div>
+            <div class="about-icon">
+              <a href="#" class="flex-center"><img src="/images/icon/facebook.svg" alt="about icon" /></a>
+              <a href="#" class="flex-center"><img src="/images/icon/tw.svg" alt="about icon" /></a>
+              <a href="#" class="flex-center"><img src="/images/icon/linkedin.svg" alt="about icon" /></a>
+              <a href="#" class="flex-center"><img src="/images/icon/instar.svg" alt="about icon" /></a>
+              <a href="#" class="flex-center"><img src="/images/icon/Unsplash.svg" alt="about icon" /></a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <hr />
+
+      <!-- Gallery Section -->
+      <section class="gallery-section">
+        <div class="gallery-title flex-center">
+          <div class="gallery-title__items">
+            <h2>My Gallery</h2>
+            <p>
+              Nullam ligula nulla, mollis sed leo sit amet, gravida faucibus ligula. Aliquam bibendum, sapien vel
+              placerat.
+            </p>
+          </div>
+          <div class="gallery-title__button flex-center">
+            <a href="#"> View More </a>
+            <a href="#" class="flex-center">
+              <img src="/images/icon/ArrowRight-green.svg" alt="icon mũi tên" />
+            </a>
+          </div>
+        </div>
+        <div class="gallery-content">
+          <div class="gallery-content__items gallery-items__left">
+            <img src="/images/content/gallery-image1.png" alt="Gallery Image" />
+            <img src="/images/content/gallery-image2.png" alt="Gallery Image" />
+            <img src="/images/content/gallery-image3.png" alt="Gallery Image" />
+          </div>
+          <div class="gallery-content__items gallery-items__center">
+            <img src="/images/content/gallery-image4.png" alt="Gallery Image" />
+            <img src="/images/content/gallery-image5.png" alt="Gallery Image" />
+          </div>
+          <div class="gallery-content__items gallery-items__right">
+            <img src="/images/content/gallery-image6.png" alt="Gallery Image" />
+            <img src="/images/content/gallery-image7.png" alt="Gallery Image" />
+            <img src="/images/content/gallery-image8.png" alt="Gallery Image" />
+            <img src="/images/content/gallery-image9.png" alt="Gallery Image" />
+          </div>
+        </div>
+      </section>
+
+      <hr />
+      <!-- Services Section -->
+      <section class="services-section">
+        <div class="services-title">
+          <h2>My Services</h2>
+          <p>
+            Nullam ligula nulla, mollis sed leo sit amet, gravida faucibus ligula. Aliquam bibendum, sapien vel
+            placerat.
+          </p>
+        </div>
+        <div class="services-content">
+          <div class="services-icon">
+            <div class="services-icon__items">
+              <img src="/images/icon/SmileySticker.svg" alt="Services Icon" />
+              <div class="services-items__title">
+                <h3>Portrait & Fashion Photography</h3>
+                <p>Morbi semper sem diam, nec commodo diam laoreet at. Morbi blandit hendrerit vehicula.</p>
+              </div>
+            </div>
+            <div class="services-icon__items">
+              <img src="/images/icon/PresentationChart.svg" alt="Services Icon" />
+              <div class="services-items__title">
+                <h3>Wedding & Events Photography</h3>
+                <p>Morbi semper sem diam, nec commodo diam laoreet at. Morbi blandit hendrerit vehicula.</p>
+              </div>
+            </div>
+            <div class="services-icon__items">
+              <img src="/images/icon/Compass.svg" alt="Services Icon" />
+              <div class="services-items__title">
+                <h3>Architectural, Travel & Lifestyle</h3>
+                <p>Morbi semper sem diam, nec commodo diam laoreet at. Morbi blandit hendrerit vehicula.</p>
+              </div>
+            </div>
+          </div>
+          <div class="services-photo">
+            <img src="/images/content/services-image1.png" alt="Services Images" />
+            <img src="/images/content/services-image2.png" alt="Services Images" />
+            <img src="/images/content/services-image3.png" alt="Services Images" />
+          </div>
+        </div>
+      </section>
+
+      <!-- Pricing Section -->
+      <section class="pricing-section">
+        <div class="container">
+          <h2>Pricing Plans</h2>
+          <div class="pricing-content">
+            <div class="pricing-content__items">
+              <div class="pricing-item__title">
+                <h3>$625</h3>
+                <h4>Standard</h4>
+                <p>In mi ex, rutrum sed dui et, dignissim tempor leo. Maecenas vulputate, arcu eget condin.</p>
+              </div>
+              <hr />
+              <div class="pricing-items__checklist">
+                <div class="pricing-checklist__items pricing-checklist__items--active">
+                  <img src="/images/icon/CheckCircle.svg" alt="Icon Checklist" />
+                  <h5>2 Hours</h5>
+                </div>
+                <div class="pricing-checklist__items pricing-checklist__items--active">
+                  <img src="/images/icon/CheckCircle.svg" alt="Icon Checklist" />
+                  <h5>1 Photographer</h5>
+                </div>
+                <div class="pricing-checklist__items">
+                  <img src="/images/icon/CheckCircle-non.svg" alt="Icon Checklist" />
+                  <h5>Specail Photo Edits</h5>
+                </div>
+                <div class="pricing-checklist__items">
+                  <img src="/images/icon/CheckCircle-non.svg" alt="Icon Checklist" />
+                  <h5>Wedding, Events & Festivals</h5>
+                </div>
+                <div class="pricing-checklist__items">
+                  <img src="/images/icon/CheckCircle-non.svg" alt="Icon Checklist" />
+                  <h5>Engagement Shoot</h5>
+                </div>
+                <div class="pricing-checklist__items">
+                  <img src="/images/icon/CheckCircle-non.svg" alt="Icon Checklist" />
+                  <h5>Ceremony Video</h5>
+                </div>
+              </div>
+              <div class="pricing-button">
+                <a href="#">Let's Work Together</a>
+                <a href="#"><img src="/images/icon/ArrowRight-green.svg" alt="Icon Button" /></a>
+              </div>
+            </div>
+            <div class="pricing-content__items">
+              <div class="pricing-item__title">
+                <h3>$1,600</h3>
+                <h4>Premium</h4>
+                <p>In mi ex, rutrum sed dui et, dignissim tempor leo. Maecenas vulputate, arcu eget condin.</p>
+                <span>Recommended</span>
+              </div>
+              <hr />
+              <div class="pricing-items__checklist">
+                <div class="pricing-checklist__items pricing-checklist__items--active">
+                  <img src="/images/icon/CheckCircle.svg" alt="Icon Checklist" />
+                  <h5>4 Hours</h5>
+                </div>
+                <div class="pricing-checklist__items pricing-checklist__items--active">
+                  <img src="/images/icon/CheckCircle.svg" alt="Icon Checklist" />
+                  <h5>1 Photographer</h5>
+                </div>
+                <div class="pricing-checklist__items">
+                  <img src="/images/icon/CheckCircle.svg" alt="Icon Checklist" />
+                  <h5>Specail Photo Edits</h5>
+                </div>
+                <div class="pricing-checklist__items">
+                  <img src="/images/icon/CheckCircle.svg" alt="Icon Checklist" />
+                  <h5>Wedding, Events & Festivals</h5>
+                </div>
+                <div class="pricing-checklist__items">
+                  <img src="/images/icon/CheckCircle-non.svg" alt="Icon Checklist" />
+                  <h5>Engagement Shoot</h5>
+                </div>
+                <div class="pricing-checklist__items">
+                  <img src="/images/icon/CheckCircle-non.svg" alt="Icon Checklist" />
+                  <h5>Ceremony Video</h5>
+                </div>
+              </div>
+              <div class="pricing-button">
+                <a href="#">Let's Work Together</a>
+                <a href="#"><img src="/images/icon/ArrowRight.svg" alt="Icon Button" /></a>
+              </div>
+            </div>
+            <div class="pricing-content__items">
+              <div class="pricing-item__title">
+                <h3>$3,650</h3>
+                <h4>Business</h4>
+                <p>In mi ex, rutrum sed dui et, dignissim tempor leo. Maecenas vulputate, arcu eget condin.</p>
+              </div>
+              <hr />
+              <div class="pricing-items__checklist">
+                <div class="pricing-checklist__items pricing-checklist__items--active">
+                  <img src="/images/icon/CheckCircle.svg" alt="Icon Checklist" />
+                  <h5>4 Hours</h5>
+                </div>
+                <div class="pricing-checklist__items pricing-checklist__items--active">
+                  <img src="/images/icon/CheckCircle.svg" alt="Icon Checklist" />
+                  <h5>1 Photographer</h5>
+                </div>
+                <div class="pricing-checklist__items">
+                  <img src="/images/icon/CheckCircle.svg" alt="Icon Checklist" />
+                  <h5>Specail Photo Edits</h5>
+                </div>
+                <div class="pricing-checklist__items">
+                  <img src="/images/icon/CheckCircle.svg" alt="Icon Checklist" />
+                  <h5>Wedding, Events & Festivals</h5>
+                </div>
+                <div class="pricing-checklist__items">
+                  <img src="/images/icon/CheckCircle.svg" alt="Icon Checklist" />
+                  <h5>Engagement Shoot</h5>
+                </div>
+                <div class="pricing-checklist__items">
+                  <img src="/images/icon/CheckCircle.svg" alt="Icon Checklist" />
+                  <h5>Ceremony Video</h5>
+                </div>
+              </div>
+              <div class="pricing-button">
+                <a href="#">Let's Work Together</a>
+                <a href="#"><img src="/images/icon/ArrowRight-green.svg" alt="Icon Button" /></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Blog Section -->
+      <!-- Instagram Section -->
+      <!-- Contact Section -->
+    </main>
+    <!-- Footer Section -->
+    <footer></footer>
+  </body>
 </html>
