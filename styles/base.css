@@ -80,7 +80,7 @@ hr {
 header {
     background-image:
         linear-gradient(rgba(19, 34, 56, 0.95)),
-        url("/images/content/background-header.jpg");
+        url("../images/content/background-header.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -121,6 +121,11 @@ nav {
     font-size: 16px;
     font-weight: var(--font-medium);
     line-height: 24px;
+}
+
+.nav-links ul li a:hover {
+    color: var(--text-white);
+    transition: all 0.3s ease;
 }
 
 .nav-links--active a {
@@ -541,6 +546,7 @@ main {
     padding: 30px;
     border: 2px solid #E6E8EB;
     width: 536px;
+    height: 152px;
 }
 
 .services-icon__items:hover {
@@ -558,7 +564,7 @@ main {
     font-size: 20px;
     line-height: 28px;
     font-weight: var(--font-medium);
-    margin-bottom: 12px;
+    margin-bottom: 11px;
     color: var(--text-primary);
 
 }
@@ -593,7 +599,7 @@ main {
 
 .pricing-section {
     background: #F0F1F3;
-    /* height: 910px; */
+    min-height: 910px;
 }
 
 .pricing-section .container {
@@ -673,7 +679,7 @@ main {
     color: var(--primary-color);
     border: 1.5px solid #D5F0DB;
     width: 125px;
-    /* height: 34px; */
+    height: 34px;
     border-radius: 100px;
     padding: 8px 16px;
 }
@@ -712,7 +718,7 @@ main {
 
 .pricing-button {
     width: 328px;
-    /* height: 48px; */
+    height: 48px;
     border-radius: 100px;
     gap: 12px;
     border: 2px solid var(--primary-color);
@@ -741,3 +747,5 @@ main {
     color: var(--text-white);
     transition: all 0.3s ease;
 }
+
+/* Blog Section */
