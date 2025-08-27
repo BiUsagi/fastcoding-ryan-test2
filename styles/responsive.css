@@ -33,7 +33,7 @@
     }
 
     .hamburger-menu {
-        padding: 10px 6px;
+        padding: 10px 6px 5px;
     }
 }
 
@@ -530,7 +530,8 @@
     .footer-nav {
         justify-content: center;
     }
-     .footer-logo {
+
+    .footer-logo {
         order: 1;
         width: 100%;
     }
@@ -539,9 +540,10 @@
         order: 2;
         width: 100%;
         margin: 20px 0 10px;
-        
+
     }
-    .footer-links ul{
+
+    .footer-links ul {
         gap: 2vw;
     }
 
