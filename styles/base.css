@@ -43,7 +43,7 @@ hr {
 
 header {
     background-image:
-        linear-gradient(rgba(19, 34, 56, 0.95)),
+        linear-gradient(rgba(19, 34, 56, 0.95),rgba(19, 34, 56, 0.95)),
         url("../images/content/background-header.jpg");
     background-repeat: no-repeat;
     background-size: cover;
@@ -917,7 +917,7 @@ main {
     content: "";
     background-image:
         url('../images/icon/insta-icon.svg'),
-        linear-gradient(rgba(19, 34, 56, 0.80));
+        linear-gradient(rgba(19, 34, 56, 0.80), rgba(19, 34, 56, 0.80));
     background-repeat: no-repeat;
     background-position: center;
     opacity: 0;
@@ -1061,7 +1061,6 @@ footer {
     left: 0;
     width: 24px;
     height: 2px;
-    color: var(--primary-color);
     background-color: var(--primary-color);
 }
 
