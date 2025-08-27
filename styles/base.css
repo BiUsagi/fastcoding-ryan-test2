@@ -1,42 +1,6 @@
-:root {
-    /*Color */
-    --primary-color: #2DB24A;
-    --secondary-color: #EAF7ED;
-
-    /* Text */
-    --text-white: #ffffff;
-    --text-black: #000000;
-    --text-primary: #132238;
-    --text-secondary: #556070;
-
-    --font-family: 'Barlow', sans-serif;
-
-
-
-    --font-size: 16px;
-    --container-width: min(90%, 1320px);
-
-
-    /* Font weights */
-    --font-thin: 100;
-    --font-light: 300;
-    --font-regular: 400;
-    --font-medium: 500;
-    --font-semibold: 600;
-    --font-bold: 700;
-    --font-extrabold: 800;
-    --font-black: 900;
-}
-
-
-
-
-
 html {
     font-family: var(--font-family);
     font-size: var(--font-size);
-
-
 }
 
 html,
@@ -95,6 +59,47 @@ nav {
     width: var(--container-width);
     margin: 0 auto;
     height: 96px;
+}
+
+/* Mobile menu */
+.hamburger-menu {
+    display: none;
+    cursor: pointer;
+    border: 2px solid white;
+    padding: 10px;
+    border-radius: 4px;
+}
+
+.hamburger-menu:hover {
+    opacity: 0.8;
+    transition: all 0.3s ease;
+}
+
+.hamburger-menu__burger {
+    position: relative;
+    width: 25px;
+    height: 15px;
+}
+
+.hamburger-menu__burger span {
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background: var(--text-white);
+    border-radius: 2px;
+}
+
+.hamburger-menu__burger span:nth-child(1) {
+    top: 0
+}
+
+.hamburger-menu__burger span:nth-child(2) {
+    top: 6px
+}
+
+.hamburger-menu__burger span:nth-child(3) {
+    top: 12px
 }
 
 .nav-logo {
@@ -483,7 +488,7 @@ main {
     cursor: pointer;
 }
 
-.gallery-title__button:hover{
+.gallery-title__button:hover {
     opacity: 0.8;
     transition: all 0.3s ease;
 }

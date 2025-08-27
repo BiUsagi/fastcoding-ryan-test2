@@ -6,15 +6,15 @@
     /* Text */
     --text-white: #ffffff;
     --text-black: #000000;
+    --text-primary: #132238;
     --text-secondary: #556070;
 
     --font-family: 'Barlow', sans-serif;
-
-
-
     --font-size: 16px;
-    --container-width: 1320px;
-    
+
+
+    --container-width: min(90%, 1320px);
+
 
     /* Font weights */
     --font-thin: 100;
@@ -25,29 +25,48 @@
     --font-bold: 700;
     --font-extrabold: 800;
     --font-black: 900;
+
 }
 
-
-/* Desktop */
-/* @media (max-width: 1200px) {
+/* Large Desktop */
+@media (max-width: 1200px) {
     :root {
         --font-size: 15px;
-        --container-width: 1000px;
+        --container-width: min(95%, 1200px);
     }
-} */
+}
+
+/* Desktop */
+@media (max-width: 1024px) {
+    :root {
+        --container-width: min(90%, 1024px);
+    }
+}
 
 /* Tablet */
-/* @media (max-width: 768px) {
+@media (max-width: 768px) {
     :root {
         --font-size: 14px;
-        --container-width: 90%;
+        --container-width: calc(100% - 60px);
     }
-} */
+}
 
 /* Mobile */
-/* @media (max-width: 480px) {
+@media (max-width: 480px) {
     :root {
         --font-size: 13px;
-        --container-width: 95%;
+        --container-width: calc(100% - 20px);
     }
-} */
+}
+
+/* 
+@media (max-width: 1400px) {}
+
+@media (max-width: 1200px) {}
+
+@media (max-width: 1024px) {}
+
+@media (max-width: 768px) {}
+
+@media (max-width: 480px) {} 
+*/
