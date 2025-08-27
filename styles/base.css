@@ -70,6 +70,10 @@ nav {
     border-radius: 4px;
 }
 
+.hamburger-menu summary {
+    list-style: none;
+}
+
 .hamburger-menu:hover {
     opacity: 0.8;
     transition: all 0.3s ease;
