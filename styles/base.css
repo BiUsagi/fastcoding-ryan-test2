@@ -1106,9 +1106,8 @@ footer {
 .contact-form input,
 .contact-form select,
 .contact-form textarea {
-    padding: 12px 18px;
+    padding: 12px 17px;
     border: 1px solid #E6E8EB;
-    letter-spacing: 0.3px;
 }
 
 .contact-form input[name='subject'] {
@@ -1118,12 +1117,21 @@ footer {
 .contact-form select {
     letter-spacing: -0.2px;
     cursor: pointer;
-    background-color: white;
+    appearance: none;
+    background: url('../images/icon/CaretDown.svg') no-repeat right 18px center;
+    background-size: 16px 16px;
+    word-spacing: 1.5px;
+}
+
+.contact-form input[name='email'] {
+    margin-left: 1px;
 }
 
 .contact-form input[name='date'] {
     cursor: pointer;
-    margin-left: -2px;
+    margin-left: -1px;
+    background: url('../images/icon/CalendarBlank.svg') no-repeat right 17px center;
+    background-size: 24px 24px;
 }
 
 .contact-form textarea {
