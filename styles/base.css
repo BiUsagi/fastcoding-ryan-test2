@@ -6,6 +6,7 @@ html {
 html,
 body {
     overflow-x: hidden;
+    scroll-behavior: smooth;
 }
 
 * {
@@ -48,8 +49,7 @@ header {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    height: 836px;
-    position: relative;
+    min-height: 836px;
 }
 
 
@@ -68,6 +68,7 @@ nav {
     border: 2px solid white;
     padding: 10px 10px 5px 10px;
     border-radius: 4px;
+    transition: all 0.3s ease;
 }
 
 .hamburger-menu summary {
@@ -76,7 +77,6 @@ nav {
 
 .hamburger-menu:hover {
     opacity: 0.8;
-    transition: all 0.3s ease;
 }
 
 .hamburger-menu__burger {
@@ -133,20 +133,26 @@ nav {
     gap: 25px;
 }
 
+
+
 .nav-links ul li a {
     color: #87909D;
     font-size: 16px;
     font-weight: var(--font-medium);
     line-height: 24px;
+    transition: all 0.3s ease;
+
 }
+
+
 
 .nav-links ul li a:hover {
     color: var(--text-white);
-    transition: all 0.3s ease;
+    text-shadow: 0.5px 0 0 currentColor;
 }
 
 .nav-links--active a {
-    font-weight: var(--font-semibold) !important;
+    text-shadow: 0.5px 0 0 currentColor;
     color: var(--text-white) !important;
     margin-right: -4px;
 }
@@ -155,21 +161,20 @@ nav {
     background: var(--primary-color);
     font-weight: var(--font-semibold);
     font-size: 16px;
-    line-height: 48px;
+    line-height: normal;
     gap: 12px;
-    padding: 0 32.5px;
+    padding: 12px 32.5px;
     border-radius: 100px;
     cursor: pointer;
+    transition: all 0.3s ease;
 }
 
 .nav-button:hover {
     opacity: 0.8;
-    transition: all 0.3s ease;
 }
 
 .nav-button a {
     color: var(--text-white);
-
 }
 
 .nav-button img {
@@ -181,12 +186,11 @@ nav {
 .header-content {
     width: var(--container-width);
     margin: 0 auto;
-    height: 465px;
+    min-height: 465px;
     gap: 250px;
 }
 
 .header-content__items {
-    /* height: 164px; */
     display: flex;
     flex-direction: column;
     gap: 30px;
@@ -219,16 +223,19 @@ nav {
 
 }
 
+.header__button div {
+    transition: all 0.3s ease;
+}
+
 .header__button div:hover {
     opacity: 0.8;
-    transition: all 0.3s ease;
 }
 
 .header__button a {
     color: var(--text-white);
     font-weight: var(--font-semibold);
     font-size: 16px;
-    line-height: 48px;
+    line-height: normal;
 }
 
 .header-button__button01 {
@@ -250,6 +257,11 @@ nav {
 }
 
 /* Header Photo */
+.header-photo__container {
+    width: 100%;
+    min-height: 275px;
+    position: relative;
+}
 
 .header-photo {
     position: absolute;
@@ -275,16 +287,18 @@ nav {
 
 /* Darkmode icon */
 .darkmode {
-    position: absolute;
+    position: fixed;
     width: 50px;
     height: 50px;
     border-radius: 50%;
     border: 2px solid var(--text-white);
     background-color: var(--primary-color);
     cursor: pointer;
-    bottom: -165px;
-    right: 79px;
+    bottom: 5vh;
+    right: 3vw;
 }
+
+.darkmode:hover {}
 
 .darkmode img {
     width: 24px;
@@ -362,7 +376,7 @@ main {
 
 .about-content {
     width: 536px;
-    height: 396px;
+    min-height: 396px;
     margin: 0 auto;
 }
 
@@ -394,6 +408,7 @@ main {
     display: flex;
     flex-direction: row;
     gap: 24px;
+    flex-wrap: wrap;
 }
 
 .about-tag {
@@ -405,17 +420,16 @@ main {
     cursor: pointer;
     font-weight: var(--font-semibold);
     font-size: 16px;
-    line-height: 48px;
     background-color: var(--primary-color);
     width: 187px;
     height: 48px;
     border-radius: 100px;
     gap: 12px;
+    transition: all 0.3s ease;
 }
 
 .about-button:hover {
     opacity: 0.8;
-    transition: all 0.3s ease;
 }
 
 .about-button a {
@@ -434,16 +448,17 @@ main {
     height: 48px;
     border: 2px solid #EAF7ED;
     border-radius: 100px;
+    transition: all 0.3s ease;
 }
 
 .about-icon a:hover {
     opacity: 0.8;
-    transition: all 0.3s ease;
 }
 
 .about-icon {
     display: flex;
     gap: 8px;
+    flex-wrap: wrap;
 }
 
 
@@ -493,18 +508,17 @@ main {
     height: 48px;
     gap: 12px;
     cursor: pointer;
+    transition: all 0.3s ease;
 }
 
 .gallery-title__button:hover {
     opacity: 0.8;
-    transition: all 0.3s ease;
 }
 
 .gallery-title__button a {
     color: var(--primary-color);
     font-size: 16px;
     font-weight: var(--font-semibold);
-    line-height: 48px;
     padding-bottom: 1px;
 }
 
@@ -587,12 +601,12 @@ main {
     padding: 30px;
     border: 2px solid #E6E8EB;
     width: 536px;
-    height: 152px;
+    min-height: 152px;
+    transition: all 0.3s ease;
 }
 
 .services-icon__items:hover {
     border: 2px solid #2DB24A;
-    transition: all 0.3s ease;
 }
 
 .services-icon__items img {
@@ -668,11 +682,13 @@ main {
 .pricing-content {
     display: flex;
     gap: 24px;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
 .pricing-content__items {
-    padding: 48px;
     background: white;
+    padding: 48px 48px 28px;
 }
 
 
@@ -731,6 +747,7 @@ main {
     display: flex;
     flex-direction: column;
     gap: 16px;
+    padding-bottom: 100px;
 }
 
 .pricing-checklist__items {
@@ -758,7 +775,15 @@ main {
     text-decoration: none;
 }
 
+
+.pricing-content__items {
+    position: relative;
+    width: 424px;
+}
+
 .pricing-button {
+    position: absolute;
+    bottom: 47px;
     width: 328px;
     height: 48px;
     border-radius: 100px;
@@ -766,6 +791,7 @@ main {
     border: 2px solid var(--primary-color);
     margin-top: 33px;
     cursor: pointer;
+    transition: all 0.3s ease;
 }
 
 .pricing-button a {
@@ -774,20 +800,18 @@ main {
     justify-content: center;
     font-weight: var(--font-semibold);
     font-size: 16px;
-    line-height: 48px;
     color: var(--primary-color);
     margin-bottom: 1px;
+    transition: all 0.3s ease;
 }
 
 
 .pricing-button:hover {
     background-color: var(--primary-color);
-    transition: all 0.3s ease;
 }
 
 .pricing-button:hover a {
     color: var(--text-white);
-    transition: all 0.3s ease;
 }
 
 /* Blog Section */
@@ -809,6 +833,7 @@ main {
 
 .blog-content {
     gap: 24px;
+    flex-wrap: wrap;
 }
 
 .blog-content figure {
@@ -846,7 +871,6 @@ main {
 
 .blog-content figure:hover figcaption {
     opacity: 1;
-    transition: all 0.3s ease;
 }
 
 .blog-content figure img {
@@ -892,6 +916,8 @@ main {
 .instagram-content {
     display: flex;
     gap: 24px;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
 .instagram-section h2 {
@@ -923,17 +949,17 @@ main {
     background-repeat: no-repeat;
     background-position: center;
     opacity: 0;
+    transition: all 0.3s ease;
 }
 
 .instagram-item:hover::before {
     opacity: 1;
-    transition: all 0.3s ease;
 }
 
 
 /* Footer */
 footer {
-    height: 840px;
+    min-height: 840px;
     background: #F0F1F3;
     padding-top: 100px;
 
@@ -995,11 +1021,11 @@ footer {
     gap: 6px;
     flex-direction: column;
     justify-content: center;
+    transition: all 0.3s ease;
 }
 
 .contact-items__content:hover {
     opacity: 0.8;
-    transition: all 0.3s ease;
 }
 
 .contact-items__content span {
@@ -1029,6 +1055,7 @@ footer {
     gap: 12px;
     position: relative;
     padding-left: 36px;
+    flex-wrap: wrap;
 }
 
 
@@ -1044,12 +1071,12 @@ footer {
     background: white;
     border-radius: 50%;
     color: var(--primary-color);
+    transition: all 0.3s ease;
 }
 
 .contact-social__items a:hover {
     background: var(--primary-color);
     color: white;
-    transition: all 0.3s ease;
 }
 
 .contact-social__items a svg {
@@ -1091,10 +1118,19 @@ footer {
     height: 48px;
 }
 
+.contact-form input,
+.contact-form select,
+.contact-form textarea {
+    font-weight: var(--font-regular);
+    font-size: 16px;
+    line-height: 24px;
+    color: black;
+    font-family: 'Inter', sans-serif;
+}
 
 .contact-form input::placeholder,
 .contact-form select,
-.contact-form textarea {
+.contact-form textarea::placeholder {
     font-weight: var(--font-regular);
     font-size: 16px;
     line-height: 24px;
@@ -1148,29 +1184,28 @@ footer {
     color: var(--text-white);
     font-weight: var(--font-semibold);
     letter-spacing: -0.4px;
-    padding: 0 32px;
+    padding: 12px 0 12px 32px;
     border: none;
     border-radius: 100px;
     font-size: 16px;
-    line-height: 48px;
     cursor: pointer;
     margin-top: 16px;
     display: flex;
     align-items: center;
     gap: 12px;
+    transition: all 0.3s ease;
 }
 
 .contact-form button:hover {
     opacity: 0.8;
-    transition: all 0.3s ease;
 }
 
 /* Footer Navigation */
 .footer-nav {
     width: var(--container-width);
     margin: 0 auto;
-    /* height: 198px; */
     margin-top: 40px;
+    padding-bottom: 50px;
 }
 
 
@@ -1206,17 +1241,20 @@ footer {
     font-size: 16px;
     line-height: 24px;
     color: #556070;
+    transition: all 0.3s ease;
+
 }
 
 .footer-links--active a {
-    font-weight: var(--font-medium) !important;
+    text-shadow: 0.5px 0 0 currentColor;
     color: var(--text-primary) !important;
+    transition: all 0.3s ease;
+
 }
 
-.footer-links li:hover a {
+.footer-links li a:hover {
     color: var(--text-primary);
-    transition: all 0.3s ease;
-    font-weight: var(--font-medium);
+    text-shadow: 0.5px 0 0 currentColor;
 }
 
 

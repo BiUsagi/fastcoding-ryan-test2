@@ -15,21 +15,21 @@
     <link rel="stylesheet" href="styles/responsive.css" />
   </head>
   <body>
-    <header>
+    <header id="Home">
       <!-- Navigation Bar -->
       <nav class="flex-between">
-        <a href="#" class="nav-logo flex-center">
+        <a href="/" class="nav-logo flex-center">
           <img src="images/logo/logo.png" alt="logo website" />
           <span>Robert Warren</span>
         </a>
         <div class="nav-links flex-center">
           <ul>
             <li class="nav-links--active"><a href="#">Home</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Gallery</a></li>
-            <li><a href="#">Pricing Plan</a></li>
-            <li><a href="#">Blog</a></li>
-            <li><a href="#">Contact</a></li>
+            <li><a href="#About">About</a></li>
+            <li><a href="#Gallery">Gallery</a></li>
+            <li><a href="#Pricing">Pricing Plan</a></li>
+            <li><a href="#Blog">Blog</a></li>
+            <li><a href="#Contact">Contact</a></li>
           </ul>
           <div class="nav-button flex-center">
             <img src="images/icon/PhoneCall.svg" alt="icon phone" />
@@ -71,13 +71,15 @@
       </div>
 
       <!-- Header Photo -->
-      <div class="header-photo">
-        <img src="images/content/header-img1.png" alt="Header Photo" />
-        <img src="images/content/header-img2.png" alt="Header Photo" />
-        <img src="images/content/header-img3.png" alt="Header Photo" />
-        <img src="images/content/header-img4.png" alt="Header Photo" />
-        <img src="images/content/header-img5.png" alt="Header Photo" />
-        <img src="images/content/header-img6.png" alt="Header Photo" />
+      <div class="header-photo__container">
+        <div class="header-photo">
+          <img src="images/content/header-img1.png" alt="Header Photo" />
+          <img src="images/content/header-img2.png" alt="Header Photo" />
+          <img src="images/content/header-img3.png" alt="Header Photo" />
+          <img src="images/content/header-img4.png" alt="Header Photo" />
+          <img src="images/content/header-img5.png" alt="Header Photo" />
+          <img src="images/content/header-img6.png" alt="Header Photo" />
+        </div>
       </div>
 
       <!-- Darkmode Icon -->
@@ -89,7 +91,7 @@
     <!-- Main Content -->
     <main>
       <!-- About Section -->
-      <section class="about-section">
+      <section class="about-section" id="About">
         <figure>
           <img src="images/content/about-img.png" alt="about image" />
           <figcaption>
@@ -147,7 +149,7 @@
       <hr class="main-hr" />
 
       <!-- Gallery Section -->
-      <section class="gallery-section">
+      <section class="gallery-section" id="Gallery">
         <div class="gallery-title flex-center">
           <div class="gallery-title__items">
             <h2>My Gallery</h2>
@@ -185,7 +187,7 @@
       <hr class="main-hr" />
 
       <!-- Services Section -->
-      <section class="services-section">
+      <section class="services-section" id="Services">
         <div class="services-title">
           <h2>My Services</h2>
           <p>
@@ -226,7 +228,7 @@
       </section>
 
       <!-- Pricing Section -->
-      <section class="pricing-section">
+      <section class="pricing-section" id="Pricing">
         <div class="container">
           <h2>Pricing Plans</h2>
           <div class="pricing-content">
@@ -401,7 +403,7 @@
       </section>
 
       <!-- Blog Section -->
-      <section class="blog-section flex-center">
+      <section class="blog-section flex-center" id="Blog">
         <h2>Blog & News</h2>
         <div class="blog-content flex-center">
           <figure>
@@ -470,7 +472,7 @@
     <!-- Footer Section -->
     <footer>
       <!-- Contact Section -->
-      <section class="contact-section">
+      <section class="contact-section" id="Contact">
         <div class="contact-content">
           <h2>Have a project or question in mind? Just send me a message.</h2>
           <p>
@@ -587,17 +589,17 @@
 
       <!-- Footer Navigation -->
       <section class="footer-nav flex-between">
-        <a href="#" class="footer-logo flex-center">
+        <a href="/" class="footer-logo flex-center">
           <img src="images/logo/logo.png" alt="logo website" />
           <span>Robert Warren</span>
         </a>
         <div class="footer-links flex-center">
           <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">About</a></li>
-            <li class="footer-links--active"><a href="#">Services</a></li>
-            <li><a href="#">Gallery</a></li>
-            <li><a href="#">Contact</a></li>
+            <li><a href="#Home">Home</a></li>
+            <li><a href="#About">About</a></li>
+            <li class="footer-links--active"><a href="#Services">Services</a></li>
+            <li><a href="#Gallery">Gallery</a></li>
+            <li><a href="#Contact">Contact</a></li>
           </ul>
         </div>
         <h6>© 2022 Robert Warren</h6>

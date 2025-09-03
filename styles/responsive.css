@@ -38,11 +38,51 @@
 }
 
 /* Header Content */
+
+@media (max-width: 1919px) {
+    .header-photo img {
+        --img-width: 16vw;
+        width: var(--img-width);
+        height: calc(var(--img-width) * 1.359);
+    }
+
+    .header-photo__container {
+        --img-width: 16vw;
+        height: calc(var(--img-width) * 1.359 + 20px);
+    }
+
+
+    .header-content__items,
+    .header-content h1 {
+        margin-bottom: 20px;
+    }
+}
+
 @media (max-width: 1400px) {
     .header-content {
         width: var(--container-width);
         gap: 0;
         justify-content: space-between;
+    }
+
+    .header-photo {
+        gap: 15px;
+        bottom: -20%;
+    }
+
+
+}
+
+@media (max-width: 1200px) {
+    .header-photo {
+        gap: 15px;
+        bottom: -15%;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        left: 50%;
+        bottom: 0%;
+        transform: translate(-50%, 50%);
     }
 
     .header-photo img {
@@ -51,34 +91,24 @@
         height: calc(var(--img-width) * 1.359);
     }
 
-    .header-photo {
-        gap: 15px;
-        bottom: -20%;
+    .header-photo__container {
+        --img-width: 20vw;
+        min-height: calc(var(--img-width) * 1.359 + 20px);
     }
 
-    .darkmode {
-        bottom: -10%;
-        right: 10%;
+    .header-photo img:nth-child(2),
+    .header-photo img:nth-child(4),
+    .header-photo img:nth-child(6) {
+        margin-top: 0;
     }
 }
 
-@media (max-width: 1200px) {
-    .header-photo img {
-        width: 240px;
-        height: 326px;
-    }
-}
 
 @media (max-width: 1024px) {
     .header-content {
         flex-direction: column;
         justify-content: center;
         gap: 30px;
-    }
-
-    .header-photo {
-        gap: 15px;
-        bottom: -15%;
     }
 
 }
@@ -95,6 +125,12 @@
 
     .header-photo {
         gap: 10px;
+    }
+
+    .header-photo img {
+        --img-width: 25vw;
+        width: var(--img-width);
+        height: calc(var(--img-width) * 1.359);
     }
 }
 
@@ -123,11 +159,18 @@
 
     .header__button {
         flex-direction: column;
+        height: auto;
     }
 
     .header-photo {
         gap: 10px;
-        bottom: -20%;
+        bottom: -15%;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        left: 50%;
+        bottom: 0%;
+        transform: translate(-50%, 50%);
     }
 }
 
@@ -150,6 +193,7 @@
 @media (max-width: 1200px) {
     .about-section {
         flex-direction: column;
+        margin-top: 400px;
     }
 
     .about-content {
@@ -166,6 +210,10 @@
 
     .about-act {
         flex-direction: column;
+    }
+
+    .about-section {
+        margin-top: 230px;
     }
 }
 
@@ -185,6 +233,10 @@
 
     .about-content p {
         font-size: 1.1rem;
+    }
+
+    .about-section {
+        margin-top: 130px;
     }
 
 
@@ -280,9 +332,13 @@
 
 /* Services Section  */
 
-@media (max-width: 1400px) {}
+@media (max-width: 1919px) {
+    .services-photo img {
+        width: 16vw;
+    }
+}
 
-@media (max-width: 1200px) {
+@media (max-width: 1400px) {
     .services-content {
         flex-direction: column;
         align-items: center;
@@ -292,16 +348,22 @@
         text-align: center;
     }
 
-    .services-title p {
-        width: 100%;
-        margin: 0 auto;
-    }
-
     .services-photo {
         width: 100%;
         justify-content: center;
     }
+
+    .services-photo img {
+        width: 312px;
+        height: 504px;
+    }
+
+    .services-title p {
+        width: 100%;
+        margin: 0 auto;
+    }
 }
+
 
 @media (max-width: 1024px) {
     .services-photo {
@@ -310,6 +372,16 @@
 
     .services-content {
         gap: 60px;
+    }
+
+    .services-photo {
+        display: flex;
+        gap: 10px;
+    }
+
+    .services-photo img {
+        width: 29vw;
+        height: 504px;
     }
 }
 
@@ -320,7 +392,6 @@
     }
 
     .services-photo img {
-        width: 240px;
         height: 338px;
     }
 
@@ -349,6 +420,17 @@
     .services-content {
         gap: 40px;
     }
+
+    .services-photo {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .services-photo img {
+        width: 100%;
+        height: auto;
+    }
+
 }
 
 /* Pricing Section */
@@ -376,7 +458,7 @@
     }
 
     .pricing-button {
-        width: 100%;
+        width: 90%;
     }
 
 }
