@@ -296,9 +296,12 @@ nav {
     cursor: pointer;
     bottom: 5vh;
     right: 3vw;
+    transition: all 0.3s ease;
 }
 
-.darkmode:hover {}
+.darkmode:hover {
+    opacity: 0.8;
+}
 
 .darkmode img {
     width: 24px;
