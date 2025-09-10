@@ -63,15 +63,7 @@ hr {
 }
 
 
-.header-section {
-    background-image:
-        linear-gradient(rgba(19, 34, 56, 0.95), rgba(19, 34, 56, 0.95)),
-        url("../images/content/background-header.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    min-height: 836px;
-}
+
 
 
 
@@ -216,6 +208,17 @@ hr {
 
 
 /* Header Content */
+
+.header-section {
+    background-image:
+        linear-gradient(rgba(19, 34, 56, 0.95), rgba(19, 34, 56, 0.95)),
+        url("../images/content/background-header.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    min-height: 836px;
+}
+
 .header-content {
     width: var(--container-width);
     margin: 0 auto;
@@ -223,11 +226,6 @@ hr {
     gap: 250px;
 }
 
-.header-content__items {
-    display: flex;
-    flex-direction: column;
-    gap: 30px;
-}
 
 .header-content h1 {
     font-size: 48px;
@@ -245,6 +243,7 @@ hr {
     line-height: 28px;
     width: 536px;
     padding-bottom: 2px;
+    margin-bottom: 30px;
 }
 
 
@@ -256,7 +255,7 @@ hr {
 
 }
 
-.header__button div {
+.header__button a {
     transition: all 0.3s ease;
 }
 
@@ -307,6 +306,8 @@ hr {
     width: 24px;
     height: 24px;
     left: 30px;
+    top: 50%;
+    transform: translateY(-50%);
 }
 
 /* Header Photo */
@@ -345,8 +346,8 @@ hr {
     border: 2px solid var(--text-white);
     background-color: var(--primary-color);
     cursor: pointer;
-    bottom: 5vh;
-    right: 3vw;
+    bottom: 10vh;
+    right: 5vw;
     transition: all 0.3s ease;
     z-index: 99;
 }
@@ -422,6 +423,7 @@ main {
     font-weight: var(--font-semibold);
     line-height: 32px;
     color: var(--text-primary);
+    margin-bottom: 3px;
 
 }
 
@@ -430,13 +432,16 @@ main {
     font-weight: var(--font-regular);
     line-height: 20px;
     color: #424E60;
-    margin-top: 3px;
 }
 
 .about-content {
     width: 536px;
     /* min-height: 396px; */
     margin: 0 auto;
+}
+
+.about-tag {
+    margin-bottom: 12px;
 }
 
 .about-tag li {
@@ -450,7 +455,7 @@ main {
     font-size: 36px;
     line-height: 44px;
     font-weight: var(--font-regular);
-    margin: 12px 0 24px 0;
+    margin-bottom: 24px;
     color: var(--text-primary);
 }
 
@@ -528,7 +533,6 @@ main {
 .gallery-section {
     width: var(--container-width);
     margin: 0 auto;
-    margin-top: 96px;
     margin-bottom: 100px;
 }
 
@@ -899,9 +903,7 @@ main {
     width: var(--container-width);
     margin: 0 auto;
     margin-top: 99px;
-    gap: 51px;
     margin-bottom: 100px;
-    flex-direction: column;
 }
 
 .blog-section h2 {
@@ -909,6 +911,9 @@ main {
     font-weight: var(--font-regular);
     font-size: 36px;
     line-height: 44px;
+    display: block;
+    margin-bottom: 51px;
+    text-align: center;
 }
 
 .blog-content {
@@ -960,17 +965,14 @@ main {
 .blog-items__info {
     display: flex;
     gap: 8px;
-}
-
-.blog-items__info li {
     font-weight: var(--font-regular);
     font-size: 14px;
     line-height: 20px;
     color: #ffffff70;
+    margin-bottom: 8px;
 }
 
 .blog-content h3 {
-    margin-top: 8px;
     font-weight: var(--font-semibold);
     line-height: 28px;
     font-size: 20px;
@@ -985,11 +987,9 @@ main {
 
 /* Instagram Section */
 .instagram-section {
-    flex-direction: column;
     width: var(--container-width);
     margin: 0 auto;
     margin-top: 98px;
-    gap: 51px;
     margin-bottom: 100px;
 }
 
@@ -1005,6 +1005,9 @@ main {
     font-size: 36px;
     line-height: 44px;
     color: var(--text-primary);
+    display: block;
+    margin-bottom: 51px;
+    text-align: center;
 }
 
 .instagram-content img {
@@ -1075,13 +1078,14 @@ footer {
     font-size: 16px;
     line-height: 24px;
     color: #556070;
+    margin-bottom: 32px;
 }
 
 .contact-info {
     display: flex;
     flex-direction: column;
-    margin-top: 32px;
     gap: 24px;
+    margin-bottom: 33px;
 }
 
 .contact-info__items {
@@ -1143,7 +1147,6 @@ footer {
 .contact-social {
     background: #EAF7ED;
     padding: 32px;
-    margin-top: 33px;
 }
 
 .contact-social__items a {
@@ -1223,7 +1226,7 @@ footer {
 .contact-form input,
 .contact-form select,
 .contact-form textarea {
-    padding: 12px 17px;
+    padding: 12px 0 12px 17px;
     border: 1px solid #E6E8EB;
 }
 
@@ -1278,7 +1281,11 @@ footer {
 
 .contact-form input[type="submit"] {
     width: 201px;
-    background: var(--primary-color);
+    background-color: #2DB24A;
+    background-image: url("../images/icon/PaperPlaneRight.svg");
+    background-repeat: no-repeat;
+    background-position: center right;
+    background-position-x: 150px;
     color: var(--text-white);
     font-weight: var(--font-semibold);
     letter-spacing: -0.4px;
@@ -1288,6 +1295,7 @@ footer {
     cursor: pointer;
     margin-top: 16px;
     transition: all 0.3s ease;
+    padding-right: 46px;
 }
 
 .contact-form button::after {
