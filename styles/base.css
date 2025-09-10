@@ -24,6 +24,11 @@ a {
     text-decoration: none;
 }
 
+a:active{
+    opacity: 0.8;
+}
+
+
 hr {
     border: none;
     border-bottom: solid 1px #E6E8EB;
@@ -208,7 +213,6 @@ hr {
 
 
 /* Header Content */
-
 .header-section {
     background-image:
         linear-gradient(rgba(19, 34, 56, 0.95), rgba(19, 34, 56, 0.95)),
